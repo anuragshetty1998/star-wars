@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Images/logo.png';
+import logo from '../Firstpage/Images/logo.png';
 import './Home.css';
 
 function Title() {
