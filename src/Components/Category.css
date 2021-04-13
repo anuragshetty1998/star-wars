@@ -1,0 +1,36 @@
+.category {
+  position: relative;
+  bottom: -15px;
+  width: 60%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: aliceblue; */
+  display: grid;
+
+  grid-template-columns: repeat(3, auto);
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+}
+
+.logo {
+  /* background-color: blue; */
+  width: max-content;
+  position: relative;
+}
+
+.logo-img {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.logo-name {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
