@@ -14,11 +14,7 @@ import vehiclesHovImg from '../Firstpage/Images/Topics/vehicles_pressed.png';
 
 
 let Data=[
-    {
-        name:'PEOPLE',
-        imgsrc:peopleImg,
-        imghovsrc:peopleHovImg
-    },
+    
     {
         name:'FILMS',
         imgsrc:filmImg,
@@ -35,7 +31,12 @@ let Data=[
         imghovsrc:planetsHovImg
     },
     {
-        name:'STARSHIP',
+        name:'PEOPLE',
+        imgsrc:peopleImg,
+        imghovsrc:peopleHovImg
+    },
+    {
+        name:'STARSHIPS',
         imgsrc:starshipImg,
         imghovsrc:starshipHovImg
     },
