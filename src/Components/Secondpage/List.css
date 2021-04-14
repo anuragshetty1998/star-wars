@@ -1,0 +1,27 @@
+.list {
+  position: relative;
+
+  width: 60%;
+  height: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  /* background-color: violet; */
+}
+
+.list-li {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+.list-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}

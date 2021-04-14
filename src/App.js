@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <Title/>
-       <Footer /> 
+       
        <Route exact path='/' component={Home}/>
        <Route exact path='/:id' component={Highlight}/>
-
+       <Footer /> 
     </div>
   );
 }
