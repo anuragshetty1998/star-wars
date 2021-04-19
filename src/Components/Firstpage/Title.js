@@ -5,7 +5,7 @@ import './Home.css';
 function Title() {
     return (
       <div className="title">
-      <img src={logo}  className='title-img'/>
+        <img src={logo} alt='Star Wars' className='title-img'/>
       </div>
     );
   }

@@ -11,10 +11,7 @@ import starshipHovImg from '../Firstpage/Images/Topics/droids_pressed.png';
 import vehiclesImg from '../Firstpage/Images/Topics/vehicles_normal.png';
 import vehiclesHovImg from '../Firstpage/Images/Topics/vehicles_pressed.png';
 
-
-
-let Data=[
-    
+let Data=[  
     {
         name:'FILMS',
         imgsrc:filmImg,
@@ -45,12 +42,7 @@ let Data=[
         imgsrc:vehiclesImg,
         imghovsrc:vehiclesHovImg
     }
-    
 ]
-
-
-
-
 
 export default Data;
 

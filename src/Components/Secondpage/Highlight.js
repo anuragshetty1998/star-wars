@@ -1,16 +1,23 @@
-import React from 'react';
+import React,{ useState} from 'react';
+import {Route} from "react-router-dom";
 import './Highlight.css';
 import Options from './Options';
-import List from './List';
-
-
+import Merge from './Merge';
+import Details from './Thirdpage/Details';
 
 function Highlight({match}) {
+  const [collUrl,setCollUrl]=useState({});
+  
+  const getUrl=(collName)=>{
+    setCollUrl(collName);
+  }
+
     return (
       <div className='highlight' >
-          <Options name={match}/>
-          <List selName={match}/>
-         
+        <Options />
+        <Route exact path='/:id' >  <Merge getUrl={getUrl} match={match}/> </Route>
+        <Route  path={`/${match.params.id}/:id2/:id3`} > <Details collUrl={collUrl} match={match} /> </Route>
+        
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react';
-import './Category.css';
 import {useState} from 'react';
+import './Logo.css';
 
 function Logo({info}) {
     const {name,imgsrc,imghovsrc}=info;
@@ -15,8 +15,8 @@ function Logo({info}) {
       }
 
     return (
-      <div className="">
-          <img onMouseOver={mouseOver} onMouseOut={mouseOut} src={isHov?imghovsrc:imgsrc} className="logo-img"></img>
+      <div >
+          <img onMouseOver={mouseOver} onMouseOut={mouseOut} src={isHov?imghovsrc:imgsrc} alt='Icon' className="logo-img"></img>
           <p className='logo-name'>{name}</p>
       </div>
     );

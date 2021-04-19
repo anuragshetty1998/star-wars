@@ -1,0 +1,48 @@
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  border-top-style: solid;
+  border-color: #054979;
+  border-width: 2px;
+}
+
+.footer-img {
+  width: 160px;
+  height: 60px;
+  position: relative;
+  left: 204px;
+  top: 20px;
+}
+
+.footer-li {
+  float: left;
+  color: #1b6ba2;
+  padding: 22px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.footer-text1 {
+  position: absolute;
+  height: 15px;
+  left: 443px;
+  top: 0px;
+}
+
+.footer-p {
+  color: #49586b;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-text2 {
+  position: absolute;
+  height: 15px;
+  left: 700px;
+  top: 65px;
+}

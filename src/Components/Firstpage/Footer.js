@@ -1,13 +1,12 @@
 import React from 'react';
-import './Home.css';
+import './Footer.css';
 import footer_logo from '../Firstpage/Images/footer_logo.png'
-
 
 function Footer() {
     return (
       <div className="footer">
           
-          <img src={footer_logo}  className='footer-img'/>
+          <img src={footer_logo} alt='footer' className='footer-img'/>
           <div className='footer-text1'>
               <ul>
                   <li className='footer-li'>TERMS OF USE </li>

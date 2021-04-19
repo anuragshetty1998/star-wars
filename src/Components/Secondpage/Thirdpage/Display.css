@@ -1,0 +1,17 @@
+.display-line {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  list-style-type: none;
+  font-size: 22px;
+  justify-content: space-around;
+}
+
+.display-name {
+  color: #c0c7cc;
+  font-family: "Open Sans";
+  font-weight: 400;
+  list-style-type: none;
+  font-size: 22px;
+  justify-content: space-around;
+}

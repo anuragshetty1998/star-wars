@@ -1,42 +1,24 @@
-import React,{ useState,useEffect} from 'react';
-import axios from 'axios';
+import React from 'react';
 import './List.css';
+import {Link} from "react-router-dom";
 
 
-function List({selName}) {
-        let {params}=selName
-        let {id}=params;
-
-        const [collData,setCollData]=useState({});
-        const[collName,setCollName]=useState([])
-        
-        // const [isdata,setIsdata]=useState(true);
-        //  let [count,setCount]=useState(1);
-
-        useEffect(()=>{
-            getData();
-        },[selName])
-
-        const getData=async ()=>{
-            return  (await axios.get(`http://swapi.dev/api/${id}/?page=1`).
-            then(res=>{
-                setCollData(res.data);
-                setCollName(res.data.results);
-             })) 
-        }
-
-
+function List({collName,id}) {
+  
     return (
       <div className='list' >
           <nav className='list-nav'>
-           {collName.map((ele)=>{
-               
-               return(<li className='list-li' key={ele.title||ele.name} >{ele.title||ele.name}</li>)
+           {collName.map((ele,index)=>{
+               return(
+                <Link style={{ textDecoration: 'none' }} to={`/${id}/${index}/${ele.title||ele.name}`}>
+                <li className='list-li' key={index} >{ele.title||ele.name}</li>
+                </Link>)
            })} 
            </nav>
-        {console.log(id)}
       </div>
     );
   }
   
   export default List;
+
+ 
