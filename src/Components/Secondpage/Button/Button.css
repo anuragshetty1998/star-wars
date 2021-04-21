@@ -1,39 +1,37 @@
-.dataBtn {
+.both-btn {
   background-color: #00a8ff;
   border: none;
   color: #e4e5e6;
   padding: 10px 27px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 19px;
   font-family: "Open Sans";
   font-weight: 400;
   opacity: 60%;
 }
 
-.dataLeft {
+.only-nextbtn {
   position: relative;
-  left: 492px;
+  left: 580%;
   background-color: #00a8ff;
   border: none;
   color: #e4e5e6;
   padding: 10px 27px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 19px;
   font-family: "Open Sans";
   font-weight: 400;
   opacity: 60%;
 }
 
-.dataBtn:hover {
+.both-btn:hover {
   color: #ffffff;
   opacity: 85%;
 }
 
-.dataLeft:hover {
+.only-nextbtn:hover {
   color: #ffffff;
   opacity: 85%;
 }

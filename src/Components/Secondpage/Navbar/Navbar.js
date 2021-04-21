@@ -1,14 +1,14 @@
-import React,{ useState} from 'react';
+import React,{useState} from 'react';
 import {Link,useParams} from "react-router-dom";
-import './Options.css';
+import './Navbar.css';
 
 const data=['films','species','planets','people','starships','vehicles'];
 
-function Options() {
+function Navbar() {
     const {id}=useParams()
     const[selected,setSelected]=useState(id);
 
-    const sel=(event)=>{
+    const select=(event)=>{
         setSelected(event.target.innerText.toLowerCase())
     }
 
@@ -16,19 +16,19 @@ function Options() {
       return(data.map((ele,index)=>{
         return (ele===selected?
           <li  className='options-sli' key={index}> {ele.toUpperCase()}</li>:
-          <Link style={{ textDecoration: 'none' }} to={`/${ele}`}> 
-            <li onClick={sel} className='options-li' key={index}> {ele.toUpperCase()}</li>
+          <Link to={`/${ele}`} style={{ textDecoration: 'none' }}> 
+            <li onClick={select} className='options-li' key={index}> {ele.toUpperCase()}</li>
           </Link>)
       }))
     }
 
     return (
-      <div className='options' >
+      <>
           <nav className='options-nav'>
              {option()} 
           </nav>
-      </div>
+      </>
     );
   }
   
-  export default Options;
+  export default Navbar;

@@ -1,14 +1,3 @@
-.list {
-  position: relative;
-
-  width: 40%;
-  height: 88%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  /* background-color: violet; */
-}
-
 .list-li {
   color: #ffffff;
   font-family: "Open Sans";
@@ -19,7 +8,11 @@
   padding: 9px;
 }
 .list-nav {
-  position: relative;
+  width: 30%;
+  height: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

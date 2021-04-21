@@ -1,9 +1,4 @@
-.home {
-  position: relative;
-  height: 100%;
-}
-
-.title {
+.header {
   position: relative;
   top: 0px;
   height: 120px;
@@ -15,7 +10,7 @@
   margin-right: auto;
 }
 
-.title-img {
+.header-img {
   width: 200px;
   height: 100px;
   position: relative;
